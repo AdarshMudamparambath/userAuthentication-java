@@ -1,13 +1,20 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class SignIn {
     static final String FILE_NAME = "user_credentials.txt";
 
     public static void signIn() {
+        File file = new File(FILE_NAME);
+        if (!file.exists() || file.length() == 0) {
+            System.out.println("No user credentials found. Please sign up first.");
+            return;
+        }
+
         try {
-            Scanner scanner = new Scanner(new File(FILE_NAME));
+            Scanner scanner = new Scanner(file);
 
             Scanner inputScanner = new Scanner(System.in);
 
