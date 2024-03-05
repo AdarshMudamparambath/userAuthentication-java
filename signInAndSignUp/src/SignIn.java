@@ -21,7 +21,7 @@ public class SignIn {
             System.out.println("Sign In");
             System.out.print("Enter the username: ");
             String username = inputScanner.nextLine(); // Read entire line for username
-            System.out.print("Enter password: ");
+            System.out.print("Enter  password: ");
             String password = inputScanner.nextLine(); // Read entire line for password
 
             boolean found = false;
