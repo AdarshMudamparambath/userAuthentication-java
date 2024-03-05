@@ -19,7 +19,7 @@ public class SignIn {
             Scanner inputScanner = new Scanner(System.in);
 
             System.out.println("Sign In");
-            System.out.print("Enter username: ");
+            System.out.print("Enter the username: ");
             String username = inputScanner.nextLine(); // Read entire line for username
             System.out.print("Enter password: ");
             String password = inputScanner.nextLine(); // Read entire line for password
