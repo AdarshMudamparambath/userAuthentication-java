@@ -13,7 +13,7 @@ public class SignUp {
             System.out.println("Sign Up");
             System.out.print("Enter the  username: ");
             String username = scanner.nextLine();
-            System.out.print("Enter  password: ");
+            System.out.print("Enter the  password: ");
             String password = scanner.nextLine();
 
             writer.write(username + " " + password + "\n");
